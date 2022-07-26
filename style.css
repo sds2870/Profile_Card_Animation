@@ -1,0 +1,49 @@
+@import url("http://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 85px;
+    background: #505;
+    border-radius: 20px;
+    filter: drop-shadow(-20px 20px 40px #509);
+}
+
+.toggle {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 60px;
+    background: #505;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-top-right-radius: 35px;
+    box-shadow: 11px -10px 0 10px #505
+    ;
+}
