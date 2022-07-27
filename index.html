@@ -9,7 +9,25 @@
 </head>
 <body>
     <div class="card">
-        <div class="toggle"></div>
+        <div class="contentBx">
+            <div class="content">
+                <h2>Distinguished Individual<br><span>Web Developer</span></h2>
+                <div class="imgBx">
+                    <img src="images/Profile_photo.jpg">
+                </div>
+                <button>Hire Me</button>
+            </div>
+        </div>
+        <div class="toggle">
+            <span></span>
+        </div>
     </div>
+    <script>
+        let card = document.querySelector(".card");
+        let cardToggle = document.querySelector(".toggle")
+        cardToggle.onclick = function () {
+            card.classList.toggle("active")
+        }
+    </script>
 </body>
 </html>
